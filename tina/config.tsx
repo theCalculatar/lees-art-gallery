@@ -1,11 +1,7 @@
 import { defineConfig } from "tinacms";
-import nextConfig from '../next.config'
+import nextConfig from "../next.config";
 
-import Post from "./collection/post";
-import Global from "./collection/global";
-import Author from "./collection/author";
-import Page from "./collection/page";
-import Tag from "./collection/tag";
+import kollection from "./collection";
 
 const config = defineConfig({
   clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID!,
@@ -29,10 +25,10 @@ const config = defineConfig({
   build: {
     publicFolder: "public", // The public asset folder for your framework
     outputFolder: "admin", // within the public folder
-    basePath: nextConfig.basePath?.replace(/^\//, '') || '', // The base path of the app (could be /blog)
+    basePath: nextConfig.basePath?.replace(/^\//, "") || "", // The base path of the app (could be /blog)
   },
   schema: {
-    collections: [Page, Post, Author, Tag, Global],
+    collections: kollection,
   },
 });
 

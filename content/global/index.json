@@ -5,20 +5,20 @@
       "color": "orange",
       "style": "float"
     },
-    "name": "Tina Starter",
+    "name": "Lee's Gallery",
     "color": "default",
     "nav": [
       {
         "href": "/",
-        "label": "Home"
+        "label": "HOME"
+      },
+      {
+        "href": "/work",
+        "label": "WORK"
       },
       {
         "href": "/about",
-        "label": "About"
-      },
-      {
-        "href": "/posts",
-        "label": "Blog"
+        "label": "ABOUT"
       }
     ]
   },
@@ -51,7 +51,7 @@
     ]
   },
   "theme": {
-    "color": "blue",
+    "color": "teal",
     "font": "sans",
     "darkMode": "light"
   }
